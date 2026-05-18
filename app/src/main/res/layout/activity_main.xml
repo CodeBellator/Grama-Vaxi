@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0B7A33"
+    android:padding="24dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <!-- Logo Placeholder: Circle with White background -->
+        <FrameLayout
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:background="@android:drawable/btn_default"> <!-- Using a generic background, but a shape would be better -->
+
+            <!-- In a real app, this would be an ImageView with the cow/goat illustration -->
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="20dp"
+                android:src="@android:drawable/ic_menu_gallery"
+                android:tint="#0B7A33" />
+        </FrameLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="Grama-Vaxi"
+            android:textColor="#FFFFFF"
+            android:textSize="38sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Livestock Healthcare"
+            android:textColor="#FFFFFF"
+            android:textSize="22sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="Healthy Animals, Healthy Village"
+            android:textColor="#F5E663"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="Digital Care for Every Animal"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnFarmer"
+            style="@style/Widget.MaterialComponents.Button.UnelevatedButton"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:layout_marginTop="48dp"
+            app:backgroundTint="#FFFFFF"
+            android:text="I'm a Farmer"
+            android:textAllCaps="false"
+            android:textColor="#0B7A33"
+            android:textSize="18sp"
+            app:cornerRadius="12dp"
+            app:icon="@android:drawable/ic_menu_myplaces"
+            app:iconGravity="textStart"
+            app:iconPadding="12dp"
+            app:iconTint="#0B7A33" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnVet"
+            style="@style/Widget.MaterialComponents.Button.UnelevatedButton"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:layout_marginTop="16dp"
+            app:backgroundTint="#FFFFFF"
+            android:text="I'm a Veterinary Staff"
+            android:textAllCaps="false"
+            android:textColor="#0B7A33"
+            android:textSize="18sp"
+            app:cornerRadius="12dp"
+            app:icon="@android:drawable/ic_menu_myplaces"
+            app:iconGravity="textStart"
+            app:iconPadding="12dp"
+            app:iconTint="#0B7A33" />
+
+    </LinearLayout>
+
+</RelativeLayout>
